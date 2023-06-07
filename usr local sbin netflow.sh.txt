@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd /docker/netflow/ && python3 -m netflow.collector -p 9000 -D
+
+cd /docker/netflow/ && python3 parse.py
