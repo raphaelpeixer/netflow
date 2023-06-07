@@ -6,13 +6,13 @@ import os
 from print_custom_files import print_custom_files
 
 #URL da API do banco VictoriaMetrics
-url = "http://172.17.251.34:8428/api/v1/import"
+url = "http://xxx.xxx.xxx.xxx:8428/api/v1/import"
 
 #HTTP header obrigatório de JSON
 headers = {"Content-Type": "application/json"}
 
 #HTTP Basic Auth
-auth = aiohttp.BasicAuth('ether', 'etherconsult')
+auth = aiohttp.BasicAuth('login', 'senha')
 
 #le o arquivo que tem os flows, gerado pelo collector
 files = print_custom_files("./")
